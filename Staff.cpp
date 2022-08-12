@@ -4,12 +4,12 @@
  массива объектов "Персонал"
 */
 #include <iostream>
-#include "Staff.h"
+#include "Chief.h"
 
 
 int main()
 {
-    top::Staff person1("John Smith", "Just worker");
-    person1.do_the_job();
+    top::Chief gen_dir("Steve Bobs", "General director");
+    gen_dir.do_the_job();
 }
 

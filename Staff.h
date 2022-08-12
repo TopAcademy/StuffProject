@@ -4,6 +4,7 @@
  сущности "Единица персонала"
 */
 #pragma once
+#include <iostream>
 #include <string>
 
 namespace top
