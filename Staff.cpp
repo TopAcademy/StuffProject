@@ -9,6 +9,7 @@
 #include "Chief.h"
 #include "Engineer.h"
 #include "Service.h"
+#include "celebrater.h"
 
 
 int main()
@@ -21,10 +22,14 @@ int main()
 	the_team.push_back(new top::Engineer("Thomas Bedisson", "Mechanics"));
 	the_team.push_back(new top::Service("James Rond", "Sequrity man"));
 	the_team.push_back(new top::Service("Joe Briden", "Windows washer"));
+	the_team.push_back(new top::Celebrater("Jackie Fun", "Holiday maker", "Fireworks and presents"));
 	// now let's do the job
 	for (int i = 0; i < the_team.size(); i++) {
 		the_team[i]->do_the_job();
 	}
-
+	// special operation of deallocation
+	for (int i = 0; i < the_team.size(); i++) {
+		delete the_team[i];
+	}
 
 }
