@@ -16,7 +16,7 @@ namespace top
 		std::string job_title;
 	public:
 		Staff(const std::string&, const std::string&);
-		void do_the_job();
+		virtual void do_the_job() = 0;
 	}; 
 	/*-----------------------------------------*/
 
@@ -26,12 +26,6 @@ namespace top
 	{
 		person_name = name;
 		job_title = job;
-	}
-
-	// Метод "Выполняй работу"
-	void Staff::do_the_job()
-	{
-		std::cout << ":-) I am " << person_name << ". I don't know what to do!" << std::endl;
 	}
 
 } // end of "top" namespace
